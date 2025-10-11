@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f6fa;
+      text-align: center;
+      margin-top: 60px;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 320px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      padding: 8px;
+      width: 70%;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 8px 12px;
+      background: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #weather {
+      margin-top: 15px;
+    }
+    .favorites {
+      margin-top: 20px;
+      text-align: left;
+    }
+    .fav-item {
+      display: flex;
+      justify-content: space-between;
+      margin: 4px 0;
+      padding: 5px 8px;
+      background: #eef4ff;
+      border-radius: 5px;
+    }
+    .delete-btn {
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      padding: 2px 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🌦️ Weather Dashboard</h2>
+    <input type="text" id="cityInput" placeholder="Enter city (e.g. Lagos)" />
+    <button onclick="getWeather()">Get Weather</button>
+    <div id="weather"></div>
+    <div class="favorites">
+      <h3>⭐ Favorite Cities</h3>
+      <div id="favoritesList"></div>
+      <button onclick="clearFavorites()">Clear Favorites</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
