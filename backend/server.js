@@ -4,7 +4,7 @@ const axios = require("axios");
 require("dotenv").config();
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "*" })); // or specify your Netlify URL instead of "*"
 app.use(express.json());
 
 app.get("/", (req, res) => res.send("Backend is running 🚀"));
