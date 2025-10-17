@@ -3,7 +3,7 @@
 
 A simple and elegant full-stack weather app that lets users search for any city, view real-time weather conditions, and save favorite cities built using HTML, CSS, JavaScript, Node.js (Express), and Open-Meteo API.
 
-## 🔗 Live Demo
+## Live Demo
 Frontend: [View on Netlify](https://weatherdboard.netlify.app/)
 
 Backend API: [View on Render](https://weather-dashboard-backend-8pfp.onrender.com/)
@@ -79,7 +79,7 @@ weather-dashboard/
 ## Setup Instructions
 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/weather-dashboard.git
+git clone https://github.com/HARMONYOMA/weather-dashboard.git
 cd weather-dashboard
 ```
 2️⃣ Backend Setup
